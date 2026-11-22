@@ -8,7 +8,7 @@
 - Memory Safety
 - Integer Overflow
 
-# 1.Dynamic Array Allocation
+## 1.Dynamic Array Allocation
 
 ## Objective
 使用 malloc() 動態配置 Sensor Array，並安全地初始化與釋放記憶體。
@@ -40,7 +40,7 @@
 - 處理配置失敗，避免 Memory Leak。
 - 檢查 Allocation Size Overflow。
 
-# 3. Dynamic Sensor Buffer Cleanup
+## 3. Dynamic Sensor Buffer Cleanup
 實作 destroySensorBuffer()，安全釋放動態配置的記憶體。
 ## Objective
 實作安全的 Sensor Buffer Cleanup Function，釋放動態記憶體並將呼叫者的 Pointer 設為 NULL。
