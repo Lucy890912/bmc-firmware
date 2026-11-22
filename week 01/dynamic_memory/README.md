@@ -15,14 +15,14 @@
 
 ## Requirements
 
-1.實作 int *createSensorArray(size_t count)。
-2.根據 count 動態配置整數陣列。
-3.將每個元素初始化為 i * 10。
-4.處理 count == 0。
-5.檢查記憶體配置大小是否溢位。
-6.避免初始化時發生 Signed Integer Overflow。
-7.檢查 malloc() 是否成功。
-8.使用 free() 釋放記憶體。
+- 實作 int *createSensorArray(size_t count)。
+- 根據 count 動態配置整數陣列。
+- 將每個元素初始化為 i * 10。
+- 處理 count == 0。
+- 檢查記憶體配置大小是否溢位。
+- 避免初始化時發生 Signed Integer Overflow。
+- 檢查 malloc() 是否成功。
+- 使用 free() 釋放記憶體。
 
 ## 2.Dynamic Sensor Buffer Expansion
 
@@ -31,14 +31,14 @@
 
 ## Requirements
 
-1.實作 expandSensorBuffer()。
-2.使用 Double Pointer 修改呼叫者的 Pointer。
-3.檢查輸入參數是否合法。
-4.使用 realloc() 擴充 Buffer。
-5.保留原始 Sensor Data。
-6.將新增的元素初始化為 0。
-7.處理配置失敗，避免 Memory Leak。
-8.檢查 Allocation Size Overflow。
+- 實作 expandSensorBuffer()。
+- 使用 Double Pointer 修改呼叫者的 Pointer。
+- 檢查輸入參數是否合法。
+- 使用 realloc() 擴充 Buffer。
+- 保留原始 Sensor Data。
+- 將新增的元素初始化為 0。
+- 處理配置失敗，避免 Memory Leak。
+- 檢查 Allocation Size Overflow。
 
 # 3. Dynamic Sensor Buffer Cleanup
 實作 destroySensorBuffer()，安全釋放動態配置的記憶體。
@@ -47,9 +47,9 @@
 
 ## Requirements
 
-1.實作 void destroySensorBuffer(int **buffer)。
-2.檢查 buffer 與 *buffer 是否為 NULL。
-3.使用 free() 釋放記憶體。
-4.將呼叫者的 Pointer 設為 NULL。
-5.確保重複呼叫 Cleanup Function 不會造成錯誤。
-6.測試 NULL Pointer 的情況。
+- 實作 void destroySensorBuffer(int **buffer)。
+- 檢查 buffer 與 *buffer 是否為 NULL。
+- 使用 free() 釋放記憶體。
+- 將呼叫者的 Pointer 設為 NULL。
+- 確保重複呼叫 Cleanup Function 不會造成錯誤。
+- 測試 NULL Pointer 的情況。
